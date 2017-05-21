@@ -1,0 +1,186 @@
+/* 
+
+This isn't used in dev.
+The styles for this site will be made in sass and compiled to a minified stylesheet we copy / paste into the CMS. This stylesheet exists for fast changes in the CMS. These should be after brought into the Sass, compiled, and added the the respective global, assets, or contents stylesheet, and removed from Fresh.css. 
+This is a tool, not a crutch. Use Sass and SVN FTW.  
+
+*/
+
+
+/* TZ - e-gifts.css. This is used on the buy-a-tab page. At some point this should be rolled into fragments.css. */
+.chewycenter.e-gifts {
+    font-size: 100%;
+    background-color: #f4f4f4;
+    background-position: top center;
+    background-repeat: repeat-y;
+}
+.e-gifts h1, .e-gifts h2, .e-gifts h3 {
+    margin: 0 auto;
+    color: #720f14;
+    font-family: "laudatio", "Trebuchet MS", sans-serif;
+}
+.e-gifts h1 {
+    max-width: 760px;
+    font-size: 1.875rem;
+    font-weight: 700;
+}
+.e-gifts h1 hr, .e-gifts h2 hr {
+    margin: 10px auto;
+    width: 99px;
+    border: none;
+    border-top: 1px solid #d6c493;
+    height: 0px;
+}
+
+.e-gifts h3 {
+    font-size: 1.5rem;
+    text-transform: none;
+    text-align: left;
+    color: #464646;
+    margin: 80px 0 0;
+    min-height: 120px;
+}
+.e-gifts h4 {
+    color: #770915;
+    width: 100%;
+    font-weight: 700;
+}
+
+.e-gifts ol {
+    font-size: .875rem;
+    color: #770915;
+    padding: 0;
+    margin: 15px 0;
+    width: 80%;
+}
+.e-gifts ol li {
+    list-style: none;
+    position: relative;
+    margin: 0 0 15px 40px;
+}
+.e-gifts ol li:before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -36px;
+    width: 28px;
+    height: 28px;
+}
+/*
+.e-gifts ol li:nth-child(2):before {
+    top: -4px;
+}
+.e-gifts .egifts-ordering ol li:nth-child(2):before {
+    top: 8px;
+}
+.e-gifts ol li:nth-child(3):before {
+    top: -4px;
+}
+.e-gifts ol li:nth-child(4):before {
+    top: -4px;
+}
+*/
+.e-gifts img {
+    max-width: 100%;
+}
+.e-gifts .clear {
+    clear: both;
+}
+.e-gifts .content {
+    position:relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 940px;
+}
+.e-gifts .white-wrapper {
+    padding: 45px 0;
+    background: #FFF;
+}
+.e-gifts .gray-wrapper {
+    padding-top: 45px;
+    background: #ecdecd;
+}
+.e-gifts .egifts-icon {
+    margin: 10px auto 0;
+    width: auto;
+    display: block
+}
+.e-gifts .egifts-personalize, .e-gifts .egifts-ordering, .e-gifts .egifts-tablet {
+    width: 50%;
+    float: left;
+}
+.e-gifts .egifts-ordering {
+    padding-bottom:20px;    
+}
+.e-gifts .egifts-tablet {
+    position:absolute;
+    right:0;
+    bottom:0;
+}
+.e-gifts .egifts-cards {
+    width: 43%;
+    float: left;
+    padding-right:2%;
+}
+.e-gifts .egifts-sendcard {
+    width: 30%;
+    float: left;
+    padding-left: 5%;
+}
+.e-gifts .egifts-buycard {
+    width: 25%;
+    float: left;
+}
+.e-gifts .egifts-header {
+    width: 40%;
+    float: left;
+}
+.e-gifts .egifts-header img {
+    display:block;
+}
+.e-gifts .egifts-tablet {
+    padding-top: 60px;
+}
+.e-gifts .egifts-tablet img {
+    vertical-align: bottom;
+}
+@media (max-width:700px) {
+    .e-gifts h3 {
+        margin: 0 0 20px;
+        min-height: 0;
+    }
+    .e-gifts p {
+        max-width: 95%;
+    }
+    .e-gifts ol {
+        width: 100%;
+    }
+    .e-gifts ol li:nth-child(1):before, .e-gifts ol li:nth-child(2):before, .e-gifts .egifts-ordering ol li:nth-child(2):before, .e-gifts ol li:nth-child(3):before, .e-gifts ol li:nth-child(4):before {
+        top: -4px;
+    }
+    .e-gifts .egifts-ordering ol li:nth-child(4):before {
+        top: 8px;
+    }
+    .e-gifts .white-wrapper, .e-gifts .gray-wrapper {
+        padding-top: 20px;
+    }
+    .e-gifts .egifts-sendcard a {
+        margin: 0 0 20px;
+    }
+    .e-gifts .egifts-header, .e-gifts .egifts-tablet {
+        text-align: center;
+    }
+    .e-gifts .egifts-sendcard, .e-gifts .egifts-header, .e-gifts .egifts-buycard, .e-gifts .egifts-cards, .e-gifts .egifts-personalize, .e-gifts .egifts-ordering, .e-gifts .egifts-tablet {
+        width: 95%;
+        float: none;
+        margin: 10px auto;
+    }
+    .e-gifts .egifts-tablet {
+        position:relative;
+        margin-bottom:0;
+    }
+}
+/* Mega Nav style - because we're running out of space in the standard fields */
+.header_flyout_nav_menu sup {
+    font-size: 55%; line-height: 0; position: relative; vertical-align: baseline; top: -0.4em;
+}

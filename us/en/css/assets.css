@@ -1,0 +1,835 @@
+/*! Assets CSS v0.0.0.1 */
+/* June 5, 11:15am */
+/**************************************** 
+    HEADER 
+/****************************************/ 
+.header {
+    background:#62030f url('http://www.timhortons.com/us/images/header_dotted_background.png') left top repeat;
+}
+.header_shadow {
+    background:transparent url('http://www.timhortons.com/us/images/header_shadow_background.png') left top repeat-x;    
+}
+/* Tim - Phase 2 */
+.header[data-header-type="thcf"] {
+    background:#e4d29e url('http://www.timhortons.com/us/images/header_thcf_dotted_background.png') left top repeat;
+}
+
+/**************************************** 
+    FOOTER 
+/****************************************/ 
+
+.footer_language_options, .footer_language_options:hover {
+    background: url('http://www.timhortons.com/us/images/footer_expand_chevron.png') no-repeat;
+}
+
+.button.subscribe .last-word::after {
+	content: url('http://www.timhortons.com/us/images/footer-newsletter-subscribe.png');
+}
+
+
+/**************************************** 
+    CONTENT 
+/****************************************/ 
+ 
+    /******************* TO DO
+    
+    - Accordion arrow, and .active arrow - sprite it up 
+    - Accordion + / - nutritional accordion.
+    - .button arrow, .button.light arrow, .button.download arrow (front page)
+    - Up (back to top) arrow! 
+    - .section-shadow-top
+    - large accordions should get the +/- image
+    *****/
+.banner-arrow {
+    background:url('http://www.timhortons.com/us/images/banner-arrows-light.png') no-repeat center; 
+}
+.banner-light .banner-arrow {
+    background:url('http://www.timhortons.com/us/images/banner-arrows-dark.png') no-repeat center; 
+}
+.gradient-light-brown-granular {
+    background: url('http://www.timhortons.com/us/images/bg-nutrition-accordion-granular.png') !important;
+    box-shadow: 0 0 30px -10px rgba(0, 0, 0, 0.6) inset;
+}
+
+/* Grey arrow */
+.product-listing a:after, 
+.product-pairing a:after, 
+.product-options a:after {
+    content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1ODkxOUQ5OTI2MDUxMUUzODlCNUI3RTA4MzJEMUFGNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1ODkxOUQ5QTI2MDUxMUUzODlCNUI3RTA4MzJEMUFGNiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjU4OTE5RDk3MjYwNTExRTM4OUI1QjdFMDgzMkQxQUY2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU4OTE5RDk4MjYwNTExRTM4OUI1QjdFMDgzMkQxQUY2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+jvbFpAAAAFVJREFUeNpi/P//PwO5gImBAkAbzebm5h1ALEiuzcZAvBufAYScjdcAYvyM0wBiAwxkQAe5ms8CcQU5mkEaXU+ePPmeVM04NRLSjFcjCDAOzbQNEGAAFBAb+tByDF0AAAAASUVORK5CYII=');
+}
+/* Red arrow */
+.product-listing a:hover:after, 
+.product-pairing a:hover:after, 
+.product-options a:hover:after {
+    content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo5NzQxQjM3MTI2MDYxMUUzQjMyQkE4MTc3Q0YyMDI0NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo5NzQxQjM3MjI2MDYxMUUzQjMyQkE4MTc3Q0YyMDI0NyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjk3NDFCMzZGMjYwNjExRTNCMzJCQTgxNzdDRjIwMjQ3IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjk3NDFCMzcwMjYwNjExRTNCMzJCQTgxNzdDRjIwMjQ3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+lGRvowAAAGFJREFUeNpi/P//PwO5gHHANDOANGPDj9mEO4BYEJc8COO0+Qm7yG4gJQjErjI/37zHpoaJgMOMgXg30CBBcjTjNYCJyKABGdBBruazQFxBjuazuAKNotCmTTwP7rQNEGAAIrJ+zSEI9L4AAAAASUVORK5CYII=');    
+}
+
+/* Product Base Glow */
+.product-listing .container > .row .row > .span6 img { background: url(http://www.timhortons.com/us/images/ie-product-shadow-fallback.png) no-repeat bottom center; background-size:contain; }
+
+/**************************************** the top 3 should be moved to the homepage*********************************
+    HOME 
+/****************************************/                                                            
+/*
+.homepage_center_content .promo_nutrition_calculator {
+    background:#fff url('../images/en/homepage_content_nutrition_calculator_background.') right bottom no-repeat;
+}
+.homepage_center_content .promo_tim_card {
+    background:#fff url('../images/en/homepage_content_tim_card_background.jpg') right bottom no-repeat;
+}
+*/
+.homepage_carousel_promo.roll_up_the_rim {
+    background:#0056a9 url('http://www.timhortons.com/us/en/images/homepage_carousel_promo_rutr_background.png') left top repeat-x;
+}
+.homepage_carousel_promo.falling_for_pumpkin {
+    background:orange url('http://www.timhortons.com/us/images/homepage_carousel_promo_falling_for_pumpkin_background.jpg') center center no-repeat;
+    background-size:100% 100%;
+}
+.homepage_chocolate_bar, .homepage_chocolate_bar h2 {
+    background:#780a17 url('http://www.timhortons.com/us/images/homepage_chocolate_bar_background.png') left top repeat;
+}
+.homepage_chocolate_bar .chocolate_bar_content_container a {
+    background:transparent url('http://www.timhortons.com/us/images/chocolate_bar_chevron.png') right center no-repeat;
+}
+
+/**************************************** 
+    COFFEE PARTNERSHIP 
+/****************************************/                                                                                        
+.coffeepartner__flyout {
+    background: url(http://www.timhortons.com/us/imagesgeneral2010/Coffee-Blend-flyout-BG.png) no-repeat;
+}
+.coffeepartner__about {
+    background: url(http://www.timhortons.com/us/imagesgeneral2010/Coffee-Blend-bottom-bg.jpg) no-repeat bottom;
+}
+.coffeepartner__video.hidden-accordion .text-accordion__content {
+    background: url('http://www.timhortons.com/us/images/bg_cp_accordion.png') no-repeat;    
+}
+.fr .coffeepartner__video.hidden-accordion .text-accordion__content {
+    background: url('http://www.timhortons.com/us/images/bg_cp_accordion.png') no-repeat;
+    background-size: 100%;    
+}
+/* New Parternship Blend */
+.CP-2013-packaging {
+    background:url(http://www.timhortons.com/us/imagesgeneral2010/CP-Info-bg.jpg) no-repeat top left;
+}
+.fr .CP-2013-packaging {
+    background:url(http://www.timhortons.com/us/imagesgeneral2010/CP-Info-bg.jpg) no-repeat top left;
+}
+@media (max-width:990px) {
+    .CP-2013-packaging {
+        background:url('http://www.timhortons.com/us/images/CP-Info-short-bg.png') no-repeat top left;
+    }
+    .fr .CP-2013-packaging {
+        background:url('http://www.timhortons.com/us/images/CP-Info-short-bg.png') no-repeat top left;
+    }
+    .one-dollar-container {
+        background:url(http://www.timhortons.com/us/images/dollar-container-bg.png) no-repeat top left;
+    }
+}
+.coffeepartner-flyout-mid-left {
+    background:url(http://www.timhortons.com/us/imagesgeneral2010/CP-Info-packaging-flyout-mid-left.png) repeat-y top left;
+}
+.coffeepartner-flyout-top-right {
+    background:url(http://www.timhortons.com/us/imagesgeneral2010/CP-Info-packaging-flyout-top-right.png) no-repeat top right;
+}
+.coffeepartner-flyout-mid-right {
+    background:url(http://www.timhortons.com/us/imagesgeneral2010/CP-Info-packaging-flyout-mid-right.png) repeat-y top right;
+}
+.coffeepartner-flyout-top-left {
+    background:url(http://www.timhortons.com/us/imagesgeneral2010/CP-Info-packaging-flyout-top-left.png) no-repeat top left;
+}
+.coffeepartner-flyout-bottom-right.orange {
+    background:url(http://www.timhortons.com/us/imagesgeneral2010/CP-Info-packaging-flyout-orange-bottom.png) no-repeat top right;
+}
+.coffeepartner-flyout-bottom-right.brown {
+    background:url(http://www.timhortons.com/us/imagesgeneral2010/CP-Info-packaging-flyout-brown-bottom.png) no-repeat top right;
+}
+.coffeepartner-flyout-bottom-left.yellow {
+    background:url(http://www.timhortons.com/us/imagesgeneral2010/CP-Info-packaging-flyout-yellow-bottom.png) no-repeat top right;
+}
+.coffeepartner-flyout-bottom-left.red {
+    background:url(http://www.timhortons.com/us/imagesgeneral2010/CP-Info-packaging-flyout-red-bottom.png) no-repeat top right;
+}
+.coffeepartner__paper {
+    background:#FEF4E7 url(http://www.timhortons.com/us/imagesgeneral2010/content_bg.png) no-repeat top left;
+}
+.coffeepartner__paper:after {
+    background:url(http://www.timhortons.com/us/imagesgeneral2010/footer_bg.png) no-repeat top left;
+}
+.coffeepartner__hero-links--background {
+    background:url(http://www.timhortons.com/us/imagesgeneral2010/projects_hero_shadow.png) no-repeat;
+}
+/* Image banner */
+.AAG-pagination, .partnership_gallery .bx-wrapper .bx-pager {
+    background: url(http://www.timhortons.com/us/imagesgeneral2010/AAG_btm_bg.png) no-repeat top left;
+}
+.AAG-pagination-btns li {
+    background:url(http://www.timhortons.com/us/imagesgeneral2010/AAG_pagination_off.png) no-repeat bottom left;
+}
+#AAG-btn-1{
+    background:url(http://www.timhortons.com/us/imagesgeneral2010/AAG_pagination_on.png) no-repeat bottom left;
+}
+.AAG-left-btn, .partnership_gallery .bx-controls-direction .bx-prev {
+    background:url(http://www.timhortons.com/us/imagesgeneral2010/AAG_btn_left.png) no-repeat top left;
+}
+.AAG-right-btn, .partnership_gallery .bx-controls-direction .bx-next {
+    background:url(http://www.timhortons.com/us/imagesgeneral2010/AAG_btn_right.png) no-repeat top left;
+}
+a.AAG-pagination-btn:hover{
+    background:url(http://www.timhortons.com/us/imagesgeneral2010/AAG_pagination_on.png) no-repeat bottom left;
+}
+.partnership_gallery .holder {
+    background: url(http://www.timhortons.com/us/imagesgeneral2010/AAG_left.jpg) no-repeat left top; }
+
+/**************************************** 
+    THCF
+/****************************************/   
+.thcf_widget_bg {
+    background: url(http://www.timhortons.com/us/imagesgeneral2010/THCF_widget_bg.jpg) repeat-y;
+}   
+.thcf_widget_title {
+    background-image: url(http://www.timhortons.com/us/imagesgeneral2010/THCF_widget_title_bg.png); 
+}      
+.thcf_widget_text li a {
+    background:url(http://www.timhortons.com/us/imagesgeneral2010/THCF_widget_cta_arrow.png) no-repeat right 2px;
+}  
+.thcf_widget_bottom {
+    background: url(http://www.timhortons.com/us/imagesgeneral2010/THCF_widget_bottom.jpg) no-repeat;
+}  
+.thcfcontent li {
+    list-style-image: url(http://www.timhortons.com/us/imagesgeneral2010/redbullet.gif);
+}
+.thcfcontent .cta {
+    background:url(http://www.timhortons.com/us/imagesgeneral2010/THCF_widget_cta_arrow.png) no-repeat right center;
+}   
+.thcf-texttout a {
+    background:url(http://www.timhortons.com/us/imagesgeneral2010/thcf_photowhite.png) no-repeat bottom left;
+}
+.woodtouts .thcf-texttout {
+    background:url(http://www.timhortons.com/us/imagesgeneral2010/thcf_camplocationsblock_en.jpg) no-repeat left top;
+}
+.button.thcf-button span {
+    background: url(http://www.timhortons.com/us/imagesgeneral2010/button_findoutmore_en.png) no-repeat 0 0;
+}
+.thcf_gallery .next {
+    background: url(http://www.timhortons.com/us/imagesgeneral2010/thcf_gallery_next_btn.png) no-repeat;
+}
+.thcf_gallery .prev {
+    background: url(http://www.timhortons.com/us/imagesgeneral2010/thcf_gallery_prev_btn.png) no-repeat;
+}
+/* These need images like: http://www.timhortons.com/ca/fr/difference/thcfwhileatcampvideo.html?mediaId_1379344560238
+    - No "X"
+    - No donate button
+    - No "fixed" size area for a video
+.thcf_video.hidden-accordion .text-accordion__content {
+    background: url('/us/images/bg_cp_accordion.png') no-repeat;    
+}
+.fr .thcf_video.hidden-accordion .text-accordion__content {
+    background: url('/us/images/bg_cp_accordion.png') no-repeat;    
+}*/
+
+/* NOT SURE */ 
+/*.doublecoltout {
+    background:url(/us/imagesgeneral2010/thcf_camplocationsblock_en.jpg) no-repeat left top;
+}*/
+/*Smile Cookie*/
+#smile-map{background:#b4e3f7 url('http://www.timhortons.com/us/images/smile-map-bg.jpg') no-repeat;background-size:auto !important;}
+#smile-subhero{background:url('http://www.timhortons.com/us/images/smile-o-gram-hero-bg.jpg') no-repeat;}
+
+/* TIMMYME MOBILE PAYMENTS */
+.mobile-payment { background: url('http://www.timhortons.com/us/images/timmyme-coffeebeans.png') no-repeat 100% 400px #4d0604; }
+.mobile-payment-header { background: url('http://www.timhortons.com/us/images/en/timmyme-header.jpg') no-repeat;}
+.mobile-payment-easier { background: url('http://www.timhortons.com/us/images/en/timmyme-coffeedonut.png') no-repeat 0 200px;}
+.mobile-payment-easier ul { background: url('http://www.timhortons.com/us/images/en/timmyme-arrows.png') no-repeat 50% 0;}
+
+/* BETTER BACON */
+.better-bacon-container, .better-bacon-top-radial-gradient, .better-bacon-bottom-radial-gradient {background-image:url('http://www.timhortons.com/us/imagesgeneral2010/better-bacon-background-sprite.png');}
+.better-bacon-filmstrip {background:transparent url('http://www.timhortons.com/us/imagesgeneral2010/better-bacon-filmstrip.png') left top repeat-x;}
+.better-bacon-radial-divider-shadow-top {background:transparent url('http://www.timhortons.com/us/imagesgeneral2010/better-bacon-radial-divider-shadow-top.png') -50px top no-repeat;}
+.better-bacon__video.hidden-accordion .text-accordion__content {background:transparent url('http://www.timhortons.com/us/imagesgeneral2010/better-bacon-modal-shadow.png') left top repeat;background-size: 100%;}
+.better-bacon-radial-divider-shadow-bottom {background:transparent url('http://www.timhortons.com/us/imagesgeneral2010/better-bacon-radial-divider-shadow-bottom.png') -50px top no-repeat;}
+.better-bacon-downloads a {background:transparent url('http://www.timhortons.com/us/imagesgeneral2010/better-bacon-download.png') left bottom no-repeat;}
+.better-bacon-download-divider {background:transparent url('http://www.timhortons.com/us/imagesgeneral2010/better-bacon-download-divider.png') left top no-repeat;}
+.better-bacon-carousel-container {background:transparent url('http://www.timhortons.com/us/imagesgeneral2010/better-bacon-carousel-background.png') left top no-repeat;}
+.better-bacon-carousel-next, .better-bacon-carousel-prev{background-image:url('http://www.timhortons.com/us/imagesgeneral2010/better-bacon-carousel-navigation-sprite.png');background-color:transparent;background-repeat:no-repeat;}
+.better-bacon-carousel-pagination li{background:transparent url('http://www.timhortons.com/us/imagesgeneral2010/better-bacon-carousel-navigation-sprite.png') left -100px;}
+
+/* MERCHANDISE SINGLE SERVE */
+.single-serve-banner {background: url('http://www.timhortons.com/us/images/en/single-serve-banner-bg1.jpg') no-repeat;}
+.single-serve-cta {background: url('http://www.timhortons.com/us/images/en/single-serve-banner-bg2.jpg') no-repeat;}
+
+/**************************************** 
+    Store Locator & Site Search
+/****************************************/  
+.store-search, .site-search, .nutrition-search  {
+    background: url(http://www.timhortons.com/us/images/background-wood.jpg) repeat top center;
+}
+
+select.form-control {
+    background: url(http://www.timhortons.com/us/images/select-arrow.png) no-repeat center right 5px;
+}
+.ie8 select.form-control {
+    background-image:none;
+}
+
+/* NUTRITION CALCULATOR - PAGE FRAGMENT / ACCORDION */
+a.multiSelect, .multiSelect {background: #E1CF9B url('http://www.timhortons.com/us/images/nc-drop-down.png') right center no-repeat !important;}
+a.multiSelect:hover,.multiSelect:hover {background: #E1CF9B url('http://www.timhortons.com/us/images/nc-drop-down-hover.png') right center no-repeat !important;}
+a.multiSelect:active, .multiSelect:active {background: #E1CF9B url('http://www.timhortons.com/us/images/nc-drop-down-hover.png') right center no-repeat !important;}
+
+/* Coffee Product Category Page - From Bean to Cup Module */
+.promo_from_bean_to_cup_container {
+    background:#f2e9ce url('http://www.timhortons.com/us/images/from_bean_to_cup_background.jpg') left top repeat-x;
+}
+
+/* Dark Roast Product Page */
+.section-darkbrown {
+        background:url('http://www.timhortons.com/us/images/Background_CoffeeBeans.jpg') top center no-repeat !important;background-size:cover !important;
+}
+
+/* Coffee Product Category Page - Coffee Partnership Module - first background no longer needed (TZ)
+.promo_coffee_partnership_map_container {
+    background:transparent url('/us/images/promo_coffee_partnership_module_map.png') no-repeat;
+} */
+.promo_coffee_partnership_line_container {
+    background:transparent url('http://www.timhortons.com/us/images/promo_coffee_partnership_module_line.png') top center no-repeat;
+}
+
+/* You Might Also Enjoy Cross-sell */
+.product-listing .container .cs1:before {
+    content: "You might also enjoy:";
+}
+ 
+/* Coffee Video Module */
+.our-coffee-story {background: #522112 url('http://www.timhortons.com/us/images/coffee-video-module-gradient-bg.jpg') left top 100% repeat-x !important;text-align:center;}
+/*.our-coffee-story .container {background: url('/us/images/coffee-video-module-bg.jpg') center top 100% no-repeat;text-align:center;}*/
+
+/* Coffee Promise Campaign Module */
+.coffee-promise {background: #ebe3d5 url('http://www.timhortons.com/us/images/coffee-promise-campaign-bkg.jpg') center top 100% repeat;}
+
+/* Coffee Story Timeline Module */
+
+.tls-main .tls-common .tls-arrows .arrow-next {
+        float: right;
+        background-image: url("http://www.timhortons.com/us/images/common_arrow_light_next.png"); }
+
+.tls-main .tls-common .tls-arrows .arrow-next.dark {
+        background-image: url("http://www.timhortons.com/us/images/common_arrow_dark_next.png"); }
+
+.tls-main .tls-common .tls-arrows .arrow-prev {
+        background-image: url("http://www.timhortons.com/us/images/common_arrow_light_prev.png"); }
+
+.tls-main .tls-common .tls-arrows .arrow-prev.dark {
+        background-image: url("http://www.timhortons.com/us/images/common_arrow_dark_prev.png"); } 
+ 
+.tls-main #slide_timeline .tls-bubble-pointer {
+      background-image: url("http://www.timhortons.com/us/images/common_pointer.png"); }
+
+.tls-main #slide_intro .tls-slide-background {
+    background-image:url('http://www.timhortons.com/us/images/coffee_quality_burlap_background.jpg');
+   /* background-image: url("/us/images/intro_bg.jpg"); */
+}
+
+.tls-main #slide_timeline[data-index="0"] .tls-slide-background {
+    background-image: url("http://www.timhortons.com/us/images/timeline_1964_bg.jpg"); }
+
+.tls-main #slide_timeline[data-index="1"] .tls-slide-background {
+    background-image: url("http://www.timhortons.com/us/images/timeline_1986_bg.jpg"); }
+
+.tls-main #slide_timeline[data-index="2"] .tls-slide-background {
+    background-image: url("http://www.timhortons.com/us/images/timeline_2004_bg.jpg"); }
+
+.tls-main #slide_timeline[data-index="3"] .tls-slide-background {
+    background-image: url("http://www.timhortons.com/us/images/timeline_2007_bg.jpg"); }
+
+.tls-main #slide_timeline[data-index="4"] .tls-slide-background {
+    background-image: url("http://www.timhortons.com/us/images/timeline_2014_bg.jpg"); }
+
+/* Coldstone Carousel */
+.cs-carousel .common .arrows .arrow-next {
+  float:right;
+  background-image:url("http://www.timhortons.com/us/images/common_arrow_light_next.png");}
+.cs-carousel .common .arrows .arrow-next.dark {
+  background-image:url("http://www.timhortons.com/us/images/common_arrow_dark_next.png");}
+.cs-carousel .common .arrows .arrow-prev {
+    background-image:url("http://www.timhortons.com/us/images/common_arrow_light_prev.png");}
+.cs-carousel .common .arrows .arrow-prev.dark {
+    background-image:url("http://www.timhortons.com/us/images/common_arrow_dark_prev.png");}    
+#carousel_holder {
+  background-image:url("http://www.timhortons.com/us/images/cs_carousel_common_bk.jpg");}
+#cs_carousel .slide-background {
+  background-image:url("http://www.timhortons.com/us/images/cs_carousel_common_slide_bk.png");}
+#cs_carousel .slide-content{
+  background-image:url("http://www.timhortons.com/us/images/cs_carousel_frame_0_content.png");}
+ 
+
+/* Social Widget */
+.sw-post h4.sw-fb-time {
+    background:url("http://www.timhortons.com/us/images/socialbar-fb.png") right top no-repeat !important;
+}
+.sw-post h4.sw-tw-time {
+    background:url("http://www.timhortons.com/us/images/socialbar-twitter.png") right top no-repeat !important;
+}
+
+/**************************************** 
+    Page Takeovers
+/****************************************/
+/* Careers page takeover */
+[data-takeover-focus="careers"] {
+    background-image:url('http://www.timhortons.com/us/images/takeover-careers-background.png');
+}
+
+/* Warm Wishes page takeover */
+[data-takeover-focus="wishes"] {
+    background-image:url('http://www.timhortons.com/us/images/takeover-warm-wishes-background.png');
+}
+[data-takeover-focus="wishes"] [data-takeover-role="middle"] {
+    background-image:url('http://www.timhortons.com/us/images/en/takeover-warm-wishes-video-background.png');
+}
+
+/* Header tabs */
+.header.hidden-mobile .header-tabs, [data-header-type="thcf"] .header-tabs .container:before, [data-header-type="thcf"] .header-tabs a, [data-header-type="corporate"] .header-tabs .container:before, [data-header-type="corporate"] .header-tabs a {
+    background-image:url('http://www.timhortons.com/us/images/header-tabs-shadow.png');
+}
+[data-header-type="default"] .header-tabs a.current-tab, [data-header-type="default"] .header-tabs .container:before {
+    background-image:url('http://www.timhortons.com/us/images/header-tabs-shadow.png'), url('http://www.timhortons.com/us/images/header_dotted_background.png');
+}
+[data-header-type="corporate"] .header-tabs a.current-tab  {
+    background-image:url('http://www.timhortons.com/us/images/header-tabs-shadow.png'), url('http://www.timhortons.com/us/images/header_dotted_background.png') !important;
+}
+
+
+/* Soups page */
+[data-module="soup_of_the_day"] [data-module-role="blackboard"] {
+    background-image:url('http://www.timhortons.com/us/images/soups-small-blackboard-middle.jpg');
+}
+[data-module="soup_of_the_day"] [data-module-role="current_soup"]:before {
+    background-image:url('http://www.timhortons.com/us/images/soups-background-folders.png');
+}
+[data-module="soup_of_the_day"] [data-module-role="current_soup"] [data-module-role="folder"] {
+    background-image:url('http://www.timhortons.com/us/images/soups-folder-background.jpg');
+}
+[data-module="soup_of_the_day"] [data-module-role="current_soup"] [data-module-role="title_tab"] {
+    background-image:url('http://www.timhortons.com/us/images/soups-folder-title-background.png');
+}
+[data-module="soup_filter"] [data-module-role="blackboard"] {
+    background-image:url('http://www.timhortons.com/us/images/soups-large-blackboard-middle.jpg');
+}
+[data-module="soup_filter"] [data-module-role="filter"] {
+    background-image:url('http://www.timhortons.com/us/images/soups-filter-background.jpg');
+}
+[data-page="soup"] {
+    background-image:url('http://www.timhortons.com/us/images/soups-background.jpg');
+}
+
+/* E-Gifts */
+.chewycenter.e-gifts {
+    background-image:url('http://www.timhortons.com/us/images/egifts-background.jpg');
+}
+.e-gifts hr {
+    background-image:url('http://www.timhortons.com/us/images/egifts-hr-shadow.gif');
+}
+.e-gifts ol li:nth-child(1):before {
+    background-image: url('http://www.timhortons.com/us/images/egifts-ol-1.gif');
+}
+.e-gifts ol li:nth-child(2):before {
+    background-image: url('http://www.timhortons.com/us/images/egifts-ol-2.gif');
+}
+.e-gifts ol li:nth-child(3):before {
+    background-image: url('http://www.timhortons.com/us/images/egifts-ol-3.gif');
+}
+.e-gifts ol li:nth-child(4):before {
+    background-image: url('http://www.timhortons.com/us/images/egifts-ol-4.gif');
+}
+
+#timCard-intro-banner {
+background-image: url("http://www.timhortons.com/us/images/TimCard_Intro_Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} 
+
+ #timCard-digital-banner {
+background-image: url("http://www.timhortons.com/us/images/Digital_Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#timCard-traditional-banner {
+background-image: url("http://www.timhortons.com/us/images/Traditional_Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+ 
+
+/* Single Serve Accordions */
+.SSTitleParagraphContainer{
+    background-image: url('http://www.timhortons.com/us/images/single-serve-already-love-bkg.png');
+}
+#SSHowToContainer{
+    background-image: url('http://www.timhortons.com/us/images/single-serve-recognize-signs-bkg.png');
+}
+#SSThreeStepPlanContainer{
+    background-image: url('http://www.timhortons.com/us/images/single-serve-proven-plan-bkg.png');
+}
+#SSBecomeASuccessStoryContainer{
+    background-image: url('http://www.timhortons.com/us/images/single-serve-awareness-become-a-success-story-bkg.png');
+}
+.SSSocialShare{
+    background-image: url('http://www.timhortons.com/us/images/single-serve-social-share-bkg.png');
+}
+.SSImageFlipContainerTopBorder{
+    background-image: url('http://www.timhortons.com/us/images/single-serve-awareness-become-a-success-image-flip-container-top-border.png');
+}
+.SSImageFlipContainer{
+    background-image: url('http://www.timhortons.com/us/images/single-serve-image-flip-bkg.png');
+}
+.SSDIYSocialShare{
+    background-image: url('http://www.timhortons.com/us/images/ss-diy-social-share-front.png');
+}
+
+/************************/
+/* MEDIA SLIDER */
+.th-slider-media .bx-wrapper .bx-prev, .th-slider-photo .bx-wrapper .bx-prev {
+    left: 17px;
+    background: url('http://www.timhortons.com/us/images/homepage_carousel_button_prev.png') no-repeat 0 0;
+}
+        
+.th-slider-media .bx-wrapper .bx-next, .th-slider-photo .bx-wrapper .bx-next {
+    right: 17px;
+    background: url('http://www.timhortons.com/us/images/homepage_carousel_button_next.png') no-repeat 0 0;
+}
+
+/* Coffee Quality */
+[data-module="coffee_quality_carousel"] [data-module-role="descriptions"] {
+    background-image:url('http://www.timhortons.com/us/images/coffee_quality_burlap_stripe.jpg');
+}
+
+.coffee_quality_timeline {
+    background-image:url('http://www.timhortons.com/us/images/coffee_quality_burlap_background.jpg');
+}
+.coffee_quality_timeline [data-module-role="video"] h5 {
+    background-image:url('http://www.timhortons.com/us/images/coffee_quality_title_gradient.png');
+}
+.coffee_quality_timeline .timeline_subtitle {
+    background-image:url('http://www.timhortons.com/us/images/coffee_quality_title_gradient.png');
+}
+.coffee_quality_timeline [data-module-role="thumbnail"]:after {
+    background-image:url('http://www.timhortons.com/us/images/coffee_quality_play_button.png');
+}
+.coffee_quality_timeline .timeline_row_beans {
+    background-image:url('http://www.timhortons.com/us/images/coffee_quality_timeline_row_beans.png');
+}
+.coffee_quality_timeline .timeline_row_line {
+    background-image:url('http://www.timhortons.com/us/images/coffee_quality_timeline_row_line.png');
+}
+.coffee_quality_timeline .timeline_row_carafe {
+    background-image:url('http://www.timhortons.com/us/images/coffee_quality_timeline_row_carafe.png');
+}
+.coffee_quality_timeline .timeline_row_cup {
+    background-image:url('http://www.timhortons.com/us/images/coffee_quality_timeline_row_cup.png');
+}
+
+.coffee_quality_timeline .timeline_row_left.timeline_row_cup {
+    background-image:url('http://www.timhortons.com/us/images/coffee_quality_timeline_row_cup_alt.png');
+}
+
+.coffee_quality_timeline [data-module-role="sharing"] [data-share-type="facebook"] {
+    background-image:url('http://www.timhortons.com/us/images/coffee_quality_facebook_share.png');
+}
+.coffee_quality_timeline [data-module-role="sharing"] [data-share-type="twitter"] {
+    background-image:url('http://www.timhortons.com/us/images/coffee_quality_twitter_share.png');
+}
+.coffee_quality_timeline .timeline_content {
+    background-image:url('http://www.timhortons.com/us/images/coffee_quality_beans_background.png');
+}
+
+/* Aged Cheddar Biscuit */
+.aged_cheddar_biscuit .biscuit_content .container {
+    background-image:url('http://www.timhortons.com/us/images/aged_cheddar_biscuit_wood_1.jpg');
+}
+.aged_cheddar_biscuit .biscuit_coupon .container {
+    background-image:url('http://www.timhortons.com/us/images/aged_cheddar_biscuit_wood_2.jpg');
+}
+.aged_cheddar_biscuit .biscuit_locator, .aged_cheddar_biscuit .biscuit_share {
+    background-image:url('http://www.timhortons.com/us/images/aged_cheddar_biscuit_skyline.jpg');
+}
+
+/* Three Peaks */
+.three_peaks_wrapper {
+    background-image:url('http://www.timhortons.com/us/images/three_peaks_background_extension.png');
+}
+.three_peaks_wrapper .three_peaks_mountain {
+    background-image:url('http://www.timhortons.com/us/images/three_peaks_background_mountain.jpg');
+}
+.three_peaks_wrapper .three_peaks_soil {
+    background-image:url('http://www.timhortons.com/us/images/three_peaks_background_soil.jpg');
+}
+.three_peaks_wrapper .three_peaks_soil:before {
+    background-image:url('http://www.timhortons.com/us/images/three_peaks_background_beans.png');
+}
+
+/* Caramel Iced Coffee */
+.cic_wrapper .page_section_banner {
+    background-image:url('http://www.timhortons.com/us/images/cic_background_banner.jpg');
+}
+.cic_wrapper .page_section_game {
+    background-image:url('http://www.timhortons.com/us/images/cic_background_caramel.jpg');
+}
+.cic_wrapper .page_section_wood {
+    background-image:url('http://www.timhortons.com/us/images/cic_background_wood.jpg');
+}
+.cic_wrapper .page_section_wood:before {
+    background-image:url('http://www.timhortons.com/us/images/cic_background_starburst.png');
+}
+[data-module="2048"][data-module-style="caramel_iced_coffee"] .tile-2 .tile-inner {
+    background-image:url('http://www.timhortons.com/us/images/cic_tile_2.jpg');
+}
+[data-module="2048"][data-module-style="caramel_iced_coffee"] .tile-4 .tile-inner {
+    background-image:url('http://www.timhortons.com/us/images/cic_tile_4.jpg');
+}
+[data-module="2048"][data-module-style="caramel_iced_coffee"] .tile-8 .tile-inner {
+    background-image:url('http://www.timhortons.com/us/images/cic_tile_8.jpg');
+}
+[data-module="2048"][data-module-style="caramel_iced_coffee"] .tile-16 .tile-inner {
+    background-image:url('http://www.timhortons.com/us/images/cic_tile_16.jpg');
+}
+[data-module="2048"][data-module-style="caramel_iced_coffee"] .tile-32 .tile-inner {
+    background-image:url('http://www.timhortons.com/us/images/cic_tile_32.jpg');
+}
+[data-module="2048"][data-module-style="caramel_iced_coffee"] .tile-64 .tile-inner {
+    background-image:url('http://www.timhortons.com/us/images/cic_tile_64.jpg');
+}
+[data-module="2048"][data-module-style="caramel_iced_coffee"] .tile-128 .tile-inner {
+    background-image:url('http://www.timhortons.com/us/images/cic_tile_128.jpg');
+}
+[data-module="2048"][data-module-style="caramel_iced_coffee"] .tile-256 .tile-inner {
+    background-image:url('http://www.timhortons.com/us/images/cic_tile_256.jpg');
+}
+[data-module="2048"][data-module-style="caramel_iced_coffee"] .tile-512 .tile-inner {
+    background-image:url('http://www.timhortons.com/us/images/cic_tile_512.jpg');
+}
+[data-module="2048"][data-module-style="caramel_iced_coffee"] .tile-1024 .tile-inner {
+    background-image:url('http://www.timhortons.com/us/images/cic_tile_1024.jpg');
+}
+[data-module="2048"][data-module-style="caramel_iced_coffee"] .tile-2048 .tile-inner {
+    background-image:url('http://www.timhortons.com/us/images/cic_tile_2048.jpg');
+}
+[data-module="2048"][data-module-style="caramel_iced_coffee"] .progress-tier {
+    background-image:url('http://www.timhortons.com/us/images/cic_background_dashed.png');
+}
+
+/* CAREERS - RESTUARANT OPPORTUNITIES */
+.corp .text-accordion .close-bottom a:before {
+    content: url('http://www.timhortons.com/us/images/arrow-up.png');
+}
+.careers-container, .chewycenter.hrsoft {
+    background:url('http://www.timhortons.com/us/images/c-bg-wood-long.jpg') repeat top center; 
+    }
+.corp .career-banner .career-banner-ribbon {
+    background:url('http://www.timhortons.com/us/images/c-bg-b-ribbon400x179.png') no-repeat top right;
+}
+.corp .career-banner .career-banner-ribbon .ribbon-481 {
+    background:url('http://www.timhortons.com/us/images/c-bg-b-ribbon481x185.png') no-repeat top right;
+}
+.corp .career-banner .career-banner-gradient {
+    background-image:url('http://www.timhortons.com/us/images/c-bg-banner-gradient.png');
+}
+.corp .career-banner .career-quote {
+    background-image:url('http://www.timhortons.com/us/images/bg-quote.png');
+}
+.corp .career-banner .career-banner-red-ribbon {
+    background-image:url('http://www.timhortons.com/us/images/bg-quote.png');
+}
+.corp .banner-left .ribbon-container {
+    background:url('http://www.timhortons.com/us/images/c-bg-b-ribbon400x179.png') no-repeat top right;
+}
+.corp .banner-right .ribbon-container {
+    background:url('http://www.timhortons.com/us/images/c-bg-b-ribbon400x179.png') no-repeat top right;
+}
+.corp .text-accordion__title {
+    background:url('http://www.timhortons.com/us/images/c-bg-c-why-acc.jpg') no-repeat 0px 0px;
+}
+.corp .what-we-do h2 span {
+    background: url('http://www.timhortons.com/us/images/c-bg-hd.png') repeat-x scroll left center transparent;
+}
+.corp .what-we-do h2 span:before {
+    background: url('http://www.timhortons.com/us/images/c-bg-hd-lft.png') no-repeat scroll left center transparent;
+}
+.corp .what-we-do h2 span:after{
+    background: url('http://www.timhortons.com/us/images/c-bg-hd-rgt.png') no-repeat scroll right center transparent;
+}
+.corp .red-ribbon-center {
+    background: url('http://www.timhortons.com/us/images/c-bg-section-banner.png') no-repeat;
+}
+.corp .side-widget h2 {
+    background: #f9efe3 url('http://www.timhortons.com/us/images/c-bg-side-ribbon.png') no-repeat top left;
+}
+.corp .link-arrow {
+    background: url('http://www.timhortons.com/us/images/arrow-go.png') no-repeat 100% center;
+}
+.corp .link-arrow-back {
+    background: url('http://www.timhortons.com/us/images/c-arrow-back.png') no-repeat left center;
+}
+.text-accordion .close-bottom a:before {
+    content: url('http://www.timhortons.com/us/images/arrow-up.png');
+}
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+    background-image: url('http://www.timhortons.com/us/images/c-fancybox_sprite.png');
+}
+#fancybox-loading div {
+    background: url('http://www.timhortons.com/us/images/c-fancybox_loading.gif') center center no-repeat;
+}
+.fancybox-nav {
+    background: transparent url('http://www.timhortons.com/us/images/c-blank.gif'); /* helps IE */
+}
+.fancybox-overlay {
+    background: url('http://www.timhortons.com/us/images/c-fancybox_overlay.png');
+}
+
+@media (max-width:640px) {
+    .corp .career-banner .career-banner-ribbon {
+        background:url('http://www.timhortons.com/us/images/c-bg-b-ribbon-mobile.png') repeat-x bottom left !important;
+    }
+    .corp .career-banner .career-banner-gradient {
+        background:url('http://www.timhortons.com/us/images/c-bg-banner-gradient-mobile.png') repeat;
+    }
+    .corp .career-banner .career-banner-red-ribbon {
+        background:url('http://www.timhortons.com/us/images/c-bg-b-ribbon-mobile.png') repeat-x bottom left !important;
+    }
+    .corp .banner-left .ribbon-container {
+        background:url('http://www.timhortons.com/us/images/c-bg-b-ribbon-mobile.png') repeat-x bottom left !important;;
+    }
+    .corp .banner-right .ribbon-container {
+        background:url('http://www.timhortons.com/us/images/c-bg-b-ribbon-mobile.png') repeat-x bottom left !important;
+    }
+}
+/*Retina graphics!*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min--moz-device-pixel-ratio: 1.5),
+       only screen and (min-device-pixel-ratio: 1.5) {
+    #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+        background-image: url('http://www.timhortons.com/us/en/images/careers/c-fancybox_sprite@2x.png');
+    }
+    #fancybox-loading div {
+        background-image: url('http://www.timhortons.com/us/en/images/careers/c-fancybox_loading@2x.gif');
+    }
+}
+ 
+/* US Sandwich lunch */
+#sandwichesContainer .fancy-hr {
+    background-image: url(http://www.timhortons.com/us/images/us/divider-line.png);
+}
+#sandwichesContainer #firstRow {
+    background-image: url(http://www.timhortons.com/us/images/us/firstRow_Image_background.png);
+}
+#sandwichesContainer #thirdRow {
+    background-image:url(http://www.timhortons.com/us/images/us/beigeWoodBackground.png);
+}
+#sandwichesContainer #fourthRow {
+    background-image: url(http://www.timhortons.com/us/images/us/lightGranularBackground.png);
+}
+#sandwichesContainer #fifthRow {
+    background-image:url(http://www.timhortons.com/us/images/us/darkWoodenTableBackground.png);
+}
+#sandwichesContainer #sixthRow {
+    background-image:url(http://www.timhortons.com/us/images/us/tomatoBackground.png);
+}
+/* US Sandwich lunch END */
+
+/* Social Widget Slider */
+[data-module="social_widget_slider"] .slick-next {
+    background-image:url('http://www.timhortons.com/us/images/button-right-red.png');
+}
+[data-module="social_widget_slider"] .slick-prev {
+    background-image:url('http://www.timhortons.com/us/images/button-left-red.png');
+}
+ 
+/* EHmoji Campaign */
+.ehmoji_campaign .ehmoji_banner {
+    background-image:url('http://www.timhortons.com/us/images/ehmoji-background-banner.jpg');
+}
+.ehmoji_campaign .flannel, .ehmoji_campaign .ehmoji_list .ehmoji_grid:before, .ehmoji_campaign .ehmoji_list .ehmoji_grid:after, .ehmoji_campaign .ehmoji_list .ehmoji_grid ul:before, .ehmoji_campaign .ehmoji_list .ehmoji_grid ul:after {
+    background-image:url('http://www.timhortons.com/us/images/ehmoji-background-flannel.jpg');
+}
+.ehmoji_campaign [data-module="ehmoji_select"] [data-module-role="select"]:after {
+    background-image:url('http://www.timhortons.com/us/images/ehmoji-symbol-dropdown.png');
+}
+.ehmoji_campaign .ehmoji_submit [type="submit"] {
+    background-image:url('http://www.timhortons.com/us/images/ehmoji-background-button.jpg');
+}
+
+/* 2015 Homepage Redesign */
+
+.homepage_redesign_2015 .tout_nutrition_and_wellness {
+	background-image:url('http://www.timhortons.com/us/images/background_nutrition_and_wellness-v2.jpg');
+}
+
+.homepage_redesign_2015 .tout_find_a_restaurant {
+	background-image:url('http://www.timhortons.com/us/images/background_find_a_restaurant.jpg');
+}
+
+.homepage_redesign_2015 .tout_soups {
+	background-image:url('http://www.timhortons.com/us/images/background_soups.jpg');
+	background-image:url('http://www.timhortons.com/us/images/background_soups_frame_horizontal.jpg'), url('http://www.timhortons.com/us/images/background_soups_frame_horizontal.jpg'), url('http://www.timhortons.com/us/images/background_soups_frame_vertical.jpg'), url('http://www.timhortons.com/us/images/background_soups_frame_vertical.jpg'), url('http://www.timhortons.com/us/images/background_soups.jpg');
+}
+
+.homepage_redesign_2015 .tout_email_newsletter {
+	background-image:url('http://www.timhortons.com/us/images/background_email_newsletter.jpg');
+}
+
+.homepage_redesign_2015 .tout_cibc_visa {
+	background-image:url('');
+}
+
+
+/* HRSOFT LEADERSHIP */
+
+.leadership .link-arrow-back {
+    background:#fff url("http://www.timhortons.com/us/images/leadership-back-arrow.png") no-repeat left center !important;
+}
+
+
+.leadership .corp .side-widget h2 {
+	background: #f3e3b5 url('http://www.timhortons.com/us/images/leadership-side-ribbon.png') no-repeat top left !important;
+}
+
+
+/* Nutella 2016 Campaign */
+
+.nutella-2016, .chewycenter.nutella-2016 {
+	background-image: url('http://www.timhortons.com/us/images/nutella-background-marble.jpg');
+}
+
+.nutella-2016 .nutella-spread {
+	background-image: url('http://www.timhortons.com/us/images/nutella-spread.png');
+}
+
+/* Eggs Benedict Campaign */
+.eggs-benedict-2016 .eggs-benedict-header {
+	background-image: url('http://www.timhortons.com/us/images/eggs-benedict-header-background.jpg');
+}
+
+.eggs-benedict-2016 .eggs-benedict-box {
+	background-image: url('http://www.timhortons.com/us/images/eggs-benedict-box-background.jpg');
+}
+
+/* Sorry Social Media Quiz */
+.sorry-quiz .quiz-intro p:last-of-type:after, .sorry-quiz .quiz-question:after {
+	background-image: url('');
+}
+
+.sorry-quiz .quiz-result {
+	background-image: url('http://www.timhortons.com/us/images/maple-iced-capp-quiz-result-background.jpg');
+}
+
+/* BBQ Steak Sandwich BOGO */
+.bbq-steak-sandwich-2016 .bbq-content {
+	background-image: url('http://www.timhortons.com/us/images/bbq-steak-sandwich-background-content.jpg');
+}
+
+.bbq-steak-sandwich-2016 .bbq-header {
+  background-image: url('http://www.timhortons.com/us/images/bbq-steak-sandwich-background-wood.jpg');
+}

@@ -1,0 +1,77 @@
+<!doctype html>
+   <html>
+   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+        <title>Tim Hortons Language Selector</title>
+        
+        <style>
+            body { color:#750714; font-size:12px; font-family:Arial, san-serif; font-weight:bold; }
+            .heading { max-width:349px; width:100%; display:block; margin:50px auto 30px;}
+            .header { width:100%; height:147px; text-align:center; background:#FFF url(ca/images/heading-logo.png) repeat-x top center; }
+            p { text-align:center; margin:0; padding:0;}
+            .selector { width:100%; max-width: 450px; margin:50px auto; }
+            .selector img.coffee { float:left; margin: 15px 60px 0 0; }
+            .selector ul { float:left; list-style:none; width:200px; margin:0; padding:0; }
+            .selector ul li { margin:0; padding:0; margin-bottom:15px; }
+            .selector ul li a:after { content:url(ca/images/arrow.gif); margin-left:10px; }
+            .btn { background:#9f0b1e; width:160px; padding:15px 25px; border-radius: 20px; color:#FFF; display:block; text-transform:uppercase; }
+            .country { text-indent:25px; }
+            .selector ul li#french-ca { margin-bottom:40px; }
+            .clear { clear:both; }
+            a { cursor: pointer; }
+            @media (max-width: 460px) {
+                .selector img.coffee, .selector ul {
+                    display: block;
+                    margin:20px auto;
+                    float:none;
+                }
+            }
+        </style>
+        
+    </head>
+    
+    <body>
+        <div class="header"></div>
+        
+        <img class="heading" src="ca/images/heading-welcome.gif" alt="Welcome To / Bienvenue Chez Tim Horton" />
+        
+        <p>Please select a site: / Veuillez s&eacute;lectionner un site:</p>
+        
+        <div class="selector">
+            <img src="ca/images/coffee-cup.jpg" alt="" class="coffee"/>
+            <ul>
+                <li class="country"><img src="ca/images/heading-canada.gif" alt="Canada" /></li>
+                <li id="english-ca"><a class="btn">English</a></li>
+                <li id="french-ca"><a class="btn">Fran&ccedil;ais</a></li>
+                <li class="country"><img src="ca/images/heading-usa.gif" alt="USA" /></li>
+                <li id="english-usa"><a class="btn">English</a></li>
+            </ul>
+            
+             <div class="clear"></div>
+        </div>
+       
+        <script>
+            document.getElementById('english-ca').addEventListener("click", function(){     
+                setTHCookie('english-ca');
+                window.location.href = "ca/en/index.html";
+            });
+            document.getElementById('french-ca').addEventListener("click", function(){     
+                setTHCookie('french-ca');
+                window.location.href = "ca/fr/index.html";
+            });
+            document.getElementById('english-usa').addEventListener("click", function(){
+                setTHCookie('english-usa');
+                window.location.href = "us/en/index.html";
+            });
+            function setTHCookie(thlang){
+                var date = new Date();
+                date.setTime(date.getTime() + (30 * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toGMTString();
+                document.cookie = "thi-language=" + thlang + expires + "; path=/";
+            }
+        </script>
+    </body>
+</html>

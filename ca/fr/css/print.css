@@ -1,0 +1,63 @@
+/*--------------------------------------------------
+Compiled on October 23, 2014 at 11:34am by sb
+--------------------------------------------------*/
+ 
+/* line 3, scss/print.scss */
+body {
+  background: none !important;
+  color: #333;
+  font-size: 10pt;
+}
+/* line 9, scss/print.scss */
+a[rel=bookmark]:link:after,
+a[rel=bookmark]:visited:after {
+  content: " [" attr(href) "] ";
+}
+/* line 12, scss/print.scss */
+a {
+  text-decoration: none;
+}
+@print .header {
+  display: none;
+}
+@print .sidebar.span3 {
+  display: none;
+}
+@print table {
+  page-break-inside: auto;
+}
+@print tr {
+  page-break-inside: avoid;
+  page-break-after: auto;
+}
+/* line 21, scss/print.scss */
+.brand img {
+  width: 25%;
+}
+/* line 25, scss/print.scss */
+.iframe-wrapper {
+  overflow: hidden;
+}
+/* line 29, scss/print.scss */
+.sidebar, .nav, #accordion-nav {
+  display: none;
+}
+/* line 33, scss/print.scss */
+.header > .row .brand {
+  border-right: none;
+}
+/* line 41, scss/print.scss */
+#iframe1806 {
+  zoom: 90%;
+  overflow: hidden !important;
+}
+/* line 47, scss/print.scss */
+[data-parallax], [data-parallax-child], [data-parallax-plank] {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100) !important;
+  opacity: 1 !important;
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  -ms-transform: none !important;
+  -o-transform: none !important;
+  transform: none !important;
+}

@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("http://hello.myfonts.net/count/326e2c");
+
+
+@font-face {
+    font-family: 'ThirstyRoughBolTwo';
+    src: url('http://www.timhortons.com/ca/en/media/326E2C_16_0.eot');
+    src: url('http://www.timhortons.com/ca/en/media/326E2C_16_0.eot?#iefix') format('embedded-opentype'),
+        url('http://www.timhortons.com/ca/en/media/326E2C_16_0.woff2') format('woff2'),
+        url('http://www.timhortons.com/ca/en/media/326E2C_16_0.woff') format('woff'),
+        url('http://www.timhortons.com/ca/en/media/326E2C_16_0.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} 
+@font-face {
+    font-family: 'ThirstyRoughRegTwo';
+    src: url('http://www.timhortons.com/ca/en/media/326E2C_17_0.eot');
+    src: url('http://www.timhortons.com/ca/en/media/326E2C_17_0.eot?#iefix') format('embedded-opentype'),
+        url('http://www.timhortons.com/ca/en/media/326E2C_17_0.woff2') format('woff2'),
+        url('http://www.timhortons.com/ca/en/media/326E2C_17_0.woff') format('woff'),
+        url('http://www.timhortons.com/ca/en/media/326E2C_17_0.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "DINBold";
+    src: url('http://www.timhortons.com/ca/fonts/dinbold-webfont.eot');
+    src: url('http://www.timhortons.com/ca/fonts/dinbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://www.timhortons.com/ca/fonts/dinbold-webfont.woff') format('woff'),
+         url('http://www.timhortons.com/ca/fonts/dinbold-webfont.ttf') format('truetype'),
+         url('http://www.timhortons.com/ca/fonts/dinbold-webfont.svg#dinboldbold') format('svg');
+    
+}
+@font-face {
+    font-family: 'DINMed';
+    src: url('http://www.timhortons.com/ca/fonts/dinmed-webfont.eot');
+    src: url('http://www.timhortons.com/ca/fonts/dinmed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://www.timhortons.com/ca/fonts/dinmed-webfont.woff') format('woff'),
+         url('http://www.timhortons.com/ca/fonts/dinmed-webfont.ttf') format('truetype'),
+         url('http://www.timhortons.com/ca/fonts/dinmed-webfont.svg#dinmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'UCB';
+    src: url('http://www.timhortons.com/ca/fonts/UniveConBol.eot');
+    src: url('http://www.timhortons.com/ca/fonts/UniveConBol.eot?#iefix') format('embedded-opentype'),
+         url('http://www.timhortons.com/ca/fonts/UniveConBol.woff') format('woff'),
+         url('') format('truetype'),
+         url('http://www.timhortons.com/ca/fonts/UniveConBol.svg#univeconbol') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: none;
+    font-smoothing: antialiased;
+}
+@font-face {
+    font-family: 'UCL';
+    src: url('http://www.timhortons.com/ca/fonts/UniveConLig.eot');
+    src: url('http://www.timhortons.com/ca/fonts/UniveConLig.eot?#iefix') format('embedded-opentype'),
+         url('http://www.timhortons.com/ca/fonts/UniveConLig.woff') format('woff'),
+         url('') format('truetype'),
+         url('http://www.timhortons.com/ca/fonts/UniveConLig.svg#univeconlig') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: none;
+    font-smoothing: antialiased;
+}
+@font-face {
+    font-family: 'UL';
+    src: url('http://www.timhortons.com/ca/fonts/UniveLig.eot');
+    src: url('http://www.timhortons.com/ca/fonts/UniveLig.eot?#iefix') format('embedded-opentype'),
+         url('http://www.timhortons.com/ca/fonts/UniveLig.woff') format('woff'),
+         url('') format('truetype'),
+         url('http://www.timhortons.com/ca/fonts/UniveLig.svg#univelig') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: none;
+    font-smoothing: antialiased;
+}
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('http://www.timhortons.com/ca/fonts/OpenSans-Regular-webfont.eot');
+    src: url('http://www.timhortons.com/ca/fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://www.timhortons.com/ca/fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('http://www.timhortons.com/ca/fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('http://www.timhortons.com/ca/fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
